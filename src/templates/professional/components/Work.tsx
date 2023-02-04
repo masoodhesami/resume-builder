@@ -7,16 +7,22 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import { HTMLRenderer } from 'src/helpers/common/components/HTMLRenderer';
 import { dateParser } from 'src/helpers/utils';
 import { IExperienceItem } from 'src/stores/experience.interface';
+import Image from 'next/image';
 
 export default function Work({ work }: { work: IExperienceItem[] }) {
+  const CareerImagesUrl = ['/queraa.png', '/queraa.png', '/queraa.png', '/apancoo.jpg'];
+
   return (
     <div>
       {work.map((company, index) => (
         <Timeline key={`${company.name}-${index}`} className="p-0 flex-initial text-[1em]">
           <TimelineItem className="before:hidden text-[1em]">
             <TimelineSeparator>
-              {/* <img width={60} height={30} src="https://avatars.githubusercontent.com/u/19687772?s=200&v=4" alt="company-logo" /> */}
-              <TimelineDot variant="outlined" color="primary" />
+              <TimelineDot className="invisible" variant="outlined" color="primary">
+                <div className="w-6 h-6 visible">
+                  <Image width={30} height={30} src={CareerImagesUrl[index]} alt="company-logo" />
+                </div>
+              </TimelineDot>
               {index !== work.length - 1 && <TimelineConnector />}
             </TimelineSeparator>
             <TimelineContent>
