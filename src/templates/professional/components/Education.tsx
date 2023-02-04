@@ -8,9 +8,17 @@ export const Education = ({ education }: { education: IEducation[] }) => {
         return (
           <div key={index} className="mt-3">
             <div>
-              <p className="font-normal">
-                {item.studyType} - {item.area}
-              </p>
+              <div className="flex justify-between">
+                <img
+                  width={23}
+                  height={12}
+                  src="https://www.cyber-islam.eu/wp-content/uploads/2021/03/io-71.jpg"
+                  alt="company-logo"
+                />
+                <p className="font-normal text-[#6c757d]">
+                  {item.studyType} - {item.area}
+                </p>
+              </div>
               <div className="flex justify-between items-center">
                 <p className="font-normal">{item.institution}</p>
                 <div className="flex gap-3">

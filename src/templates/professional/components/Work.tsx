@@ -15,6 +15,7 @@ export default function Work({ work }: { work: IExperienceItem[] }) {
         <Timeline key={`${company.name}-${index}`} className="p-0 flex-initial text-[1em]">
           <TimelineItem className="before:hidden text-[1em]">
             <TimelineSeparator>
+              {/* <img width={60} height={30} src="https://avatars.githubusercontent.com/u/19687772?s=200&v=4" alt="company-logo" /> */}
               <TimelineDot variant="outlined" color="primary" />
               {index !== work.length - 1 && <TimelineConnector />}
             </TimelineSeparator>

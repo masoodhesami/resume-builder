@@ -23,6 +23,13 @@ export const SYSTEM_COLORS: IThemeColor[] = [
     highlighterColor: '#F556E5',
     id: 3,
   },
+  {
+    backgroundColor: 'white',
+    fontColor: '#780650',
+    titleColor: '#355070',
+    highlighterColor: '#b56576',
+    id: 4,
+  },
 ];
 
 export const AVAILABLE_TEMPLATES: ITemplate = {
