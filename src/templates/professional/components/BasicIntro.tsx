@@ -1,4 +1,5 @@
 import { IBasics } from 'src/stores/index.interface';
+import { FaReact } from 'react-icons/fa';
 import styled from '@emotion/styled';
 import Color from 'color';
 import Image from 'next/image';
@@ -7,11 +8,25 @@ const Role = styled.span`
   color: ${(props) => Color(props.theme.titleColor).alpha(0.85).toString()};
 `;
 
+const IconeHolder = styled.span`
+  position: relative;
+  top: 2px;
+  left: -1px;
+`;
+
 export default function BasicIntro({ basics }: { basics: IBasics }) {
   return (
     <div className="flex justify-between">
       <div className="flex flex-col gap-2">
-        <Role className="text-sm">{basics.label}</Role>
+        <Role className="text-sm">
+          <div className="flex justify-between">
+            <IconeHolder>
+              {' '}
+              <FaReact size={17} />
+            </IconeHolder>
+            <span> {basics.label}</span>
+          </div>
+        </Role>
         <span className="text-xs">
           Relevant experience:&nbsp;
           <strong>{basics.relExp}</strong>

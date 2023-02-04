@@ -10,12 +10,12 @@ export const Education = ({ education }: { education: IEducation[] }) => {
             <div>
               <div className="flex justify-between">
                 <img
-                  width={23}
+                  width={25}
                   height={12}
                   src="https://www.cyber-islam.eu/wp-content/uploads/2021/03/io-71.jpg"
-                  alt="company-logo"
+                  alt="univercity-logo"
                 />
-                <p className="font-normal text-[#6c757d]">
+                <p className="font-normal">
                   {item.studyType} - {item.area}
                 </p>
               </div>
