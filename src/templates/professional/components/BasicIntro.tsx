@@ -21,7 +21,6 @@ export default function BasicIntro({ basics }: { basics: IBasics }) {
         <Role className="text-sm">
           <div className="flex justify-between">
             <IconeHolder>
-              {' '}
               <FaReact size={17} />
             </IconeHolder>
             <span> {basics.label}</span>
