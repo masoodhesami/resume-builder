@@ -1,5 +1,4 @@
 {
-  "prettier/prettier": ["error", { "endOfLine": "off" }],
   "extends": [
     "next/core-web-vitals",
     "plugin:@next/next/recommended",
