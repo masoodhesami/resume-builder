@@ -10,7 +10,13 @@ import { IExperienceItem } from 'src/stores/experience.interface';
 import Image from 'next/image';
 
 export default function Work({ work }: { work: IExperienceItem[] }) {
-  const CareerImagesUrl = ['/queraa.png', '/queraa.png', '/queraa.png', '/apancoo.jpg'];
+  const CareerImagesUrl = [
+    '/setflow.jpg',
+    '/queraa.png',
+    '/queraa.png',
+    '/queraa.png',
+    '/apancoo.jpg',
+  ];
 
   return (
     <div>

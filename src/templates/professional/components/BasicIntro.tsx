@@ -30,7 +30,7 @@ export default function BasicIntro({ basics }: { basics: IBasics }) {
           Relevant experience:&nbsp;
           <strong>{basics.relExp}</strong>
         </span>
-        <span className="text-xs">Total experience:&nbsp;{basics.totalExp}</span>
+        {/* <span className="text-xs">Total experience:&nbsp;{basics.totalExp}</span> */}
       </div>
 
       <div className="flex flex-col justify-end gap-2">
